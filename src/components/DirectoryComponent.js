@@ -40,7 +40,7 @@ class Directory extends Component {
     render() {
         const directory = this.state.campsites.map(campsite => {
             return (
-                <div className="col">
+                <div className="col" key={campsite.id}>
                     <img src={campsite.image} alt={campsite.name} />
                     <h2>{campsite.name}</h2>
                     <p>{campsite.description}</p>
